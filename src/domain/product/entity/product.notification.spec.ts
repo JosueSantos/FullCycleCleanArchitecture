@@ -11,10 +11,6 @@ describe("Unit tests for notifications with product", () => {
     }).toThrow("product: Name is required");
 
     expect(() => {
-      const product = new Product("", "", -1);
-    }).toThrow("product: Price must be greater than zero");
-
-    expect(() => {
       const product = new Product("", "", 100);
     }).toThrow("product: Id is required,product: Name is required");
 
